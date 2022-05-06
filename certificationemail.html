@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Do+Hyeon&family=Dongle:wght@300;400;700&family=Gamja+Flower&family=Jua&family=Nanum+Myeongjo:wght@400;700;800&family=Nanum+Pen+Script&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&family=Oleo+Script:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/certificationemail.css">
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+	<script type="text/javascript">
+        (function(){
+            emailjs.init("iiBUjT4gKhsdLuwTY");
+        })();
+    </script>
+    <script src="./js/certificationemail.js"></script>
+    <title>certificationemail</title>
+</head>
+<body>
+    <div class="cert-email">
+        <div class="formPopupCert" id="popupFormCert">
+            <form action="" class="formContainer" id="formCert">
+                <div class="pop-title-cert">
+                    <h2>이메일 본인 인증</h2>
+                </div>
+                <div class="pop-cert-inner-wrapper">
+                    <div class="pop-cert-inner">
+                        <label for="nameId"><strong>이름</strong></label>
+                        <input type="text" id="nameId" name="nameId" required readonly>
+                    </div>
+                    <div class="pop-cert-inner">
+                        <label for="emailId"><strong>email</strong></label>	
+                        <input type="email" id="emailId" placeholder="이메일을 입력하세요" name="emailId" required >
+                        <button type="button" class="btn" id="emailSend" onclick="sendCertcode()">인증코드 전송</button>
+                    </div>
+                    <div class="pop-cert-inner">
+                        <label for="certificationcode"><strong>인증코드</strong></label>	
+                        <input type="text" id="certificationcode" placeholder="인증코드 6자리" name="certificationcode"  >
+                        <button type="button" class="btn" onclick="checkCertCode();">인증코드 확인</button>
+                    </div>
+                    <div class="pop-cert-inner-btn" id="cancel-inner">
+                        <button type="button" class="btn-cancel" onclick="self.close();">닫기</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Do+Hyeon&family=Dongle:wght@300;400;700&family=Gamja+Flower&family=Jua&family=Nanum+Myeongjo:wght@400;700;800&family=Nanum+Pen+Script&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&family=Oleo+Script:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/signup.css">
+	<script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+    <script src="./js/signup.js"></script>
+    <title>signup</title>
+</head>
+    <body>
+		<div id="container">
+			<header>
+				<div class="mainTitle">
+					<a href="index.html">
+						<h1>Sitz im Leben</h1>
+						<hr class="line2">
+					</a>
+				</div>
+				<aside id = "members">
+					<div class="member">
+						<a href="signup.html">회원가입</a>
+						<a href="signin.html">로그인</a>
+					</div>
+					<div class="member-login">
+						<a id="my-a" href="mypage.html">마이 페이지</a>
+						<button id="my-btn" type="button" onclick="logout();">로그아웃</button>
+					</div>
+				</aside>
+				<aside id = subTitle> 
+					<h2>삶이 머문 자리</h2>
+				</aside>
+				<nav>
+					<ul class="navi">
+						<li class="mainMenu"><a href="aboutme.html">About Me</a></li>
+						<li class="mainMenu"><a href="seongbukdong.html" id="hoverchange">Mein Sitz im Leben</a>
+							<div class="subExplorelife">
+								<a href="seongbukdong.html">성북동</a>
+						</li>
+						<li class="mainMenu"><a href="myroadmap.html">My Roadmap</a></li>
+					</ul>
+				</nav>
+			</header>
+			<section id="content">  
+				<hr class="line2">
+				<form class="form" id="signupFrm" action="" onsubmit="enrollMemberInfo();">
+					<p class="signupTitle">회원정보 입력</p>
+					<div class="signupInfoNecessary">
+						<p class="input_id">
+							아이디
+							<span>*</span>	
+						</p>
+						<div class="row_area">
+							<div class="input_wrapper_check">
+								<div class="input_container">
+									<input type="text" id="id" name="id" placeholder="아이디 입력(6~16자 영문)" required readonly>
+								</div>
+							</div>
+							<button onclick="openCheckId()" type="button" class="btn_blue_id-email">중복 확인</button>
+						</div>
+						<p class="input_password">
+							비밀번호
+							<span>*</span>
+						</p>
+						<div class="input_wrapper">
+							<div class="input_container">
+								<input type="password" id="password" name="password" placeholder="비밀번호 입력(숫자/문자/특수문자 각1개이상)" required>
+							</div>	
+						</div>
+						<div class="input_wrapper">
+							<div class="input_container">
+								<input type="password" id="password_confirm" name="password_confirm" placeholder="비밀번호 재입력" required>
+							</div>
+						</div>
+						<p class="input_name">
+							이름
+							<span>*</span>
+						</p>
+						<div class="input_wrapper">
+							<div class="input_container">
+								<input type="text" id="user_name" name="user_name" placeholder="이름 입력" required>
+							</div>
+						</div>
+						<p class="input_phone">
+							휴대폰 번호
+							<span>*</span>
+						</p>
+							<div class="input_wrapper">
+								<div class="input_container">
+									<input type="tel" id="phone" name="phone" placeholder="휴대폰 번호 입력(- 없이)" required>
+								</div>
+							</div>
+						<p class="input_email">
+							이메일
+							<span>*</span>
+						</p>
+						<div class="row_area">
+							<div class="input_wrapper_check">
+								<div class="input_container">
+									<input type="text" id="email" name="email" placeholder="이메일 입력" required readonly>
+								</div>
+							</div>
+							<button onclick="openCertEmail()" type="button" class="btn_blue_id-email">본인 인증</button>
+						</div>
+					</div>
+
+					<div class="signupInfoOption">
+						<div class="signupInfoOptionTitle">
+							<p class="signupTitle">선택사항 입력</p>
+							<hr>
+						</div>
+						<p class="input_id">
+							주소
+						</p>
+						<div class="row_area">
+							<div class="address">
+								<div class="input_container_postCode">
+									<input type="text" id="postcode" name="postcode" placeholder="우편번호">
+								</div>
+							</div>
+							<button onclick="searchAddress();" type="button" class="btn_blue">주소 찾기</button>
+						</div>
+						<div class="row_area">
+							<div class="address">
+								<div class="input_container">
+									<input type="text" id="address" name="address" placeholder="기본주소">
+								</div>
+								<div class="input_container">
+									<input type="text" id="address_detail" name="address_detail" placeholder="상세주소">
+								</div>
+								<div class="input_container">
+									<input type="text" id="extraAddress" name="extraAddress" placeholder="참고사항">
+								</div>
+							</div>
+					
+						</div>
+						<p class="input_birth">
+							생년월일
+						</p>
+						<div class="row_area_bir">
+							<div class="input_container_birth">
+								<div id="birth_year">
+									<input type="text" id="year" maxlength="4" placeholder="년(4자)">
+								</div>
+							</div>
+							<div class="input_container_birth">
+								<div id="birth_month">
+										<select id="month">
+											<option>월</option>
+											<option value="01">1</option>
+											<option value="02">2</option>
+											<option value="03">3</option>
+											<option value="04">4</option>
+											<option value="05">5</option>
+											<option value="06">6</option>
+											<option value="07">7</option>
+											<option value="08">8</option>
+											<option value="09">9</option>                                    
+											<option value="10">10</option>
+											<option value="11">11</option>
+											<option value="12">12</option>
+										</select>
+								</div>
+							</div>
+							<div class="input_container_birth">
+								<div id="birth_day">
+									<input type="text" id="day" maxlength="2" placeholder="일">
+								</div>
+							</div>
+						</div>
+					</div>
+					<br><br>
+					<button type="submit" class="btn-signup" onclick="enrollMemberInfo();">회원가입</button>
+				</form>
+				<button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
+			</section>
+			<footer>
+				<br>
+				<hr>
+				<h3><em>Sitz im Leben</em></h3>
+				<p>&lt;Copyright 2022. <em>KimHyeonwoo</em>. All rights reserved.&gt;</p>
+			</footer>
+		</div>
+		<script src="./js/common.js"></script>
+		<script src="./js/loginout.js"></script>
+    </body>
+</html>

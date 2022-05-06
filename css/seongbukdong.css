@@ -1,0 +1,563 @@
+#container {
+	background-color:#fff;
+	width: 1024px;
+	height: 1500px;
+	margin: 0 auto;
+}
+
+hr.line2{
+	border-top: 4px solid rgb(24,189,222);
+	border-radius: 15%;
+	margin: 0px 0px 5px;
+}	
+
+/* ==================================== section ====================================== */
+
+section {
+	background-color:#fff;
+	width: 1024px;
+	height: 950px;
+}
+
+.title-article {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	width: 1024px;
+	flex-wrap: wrap;
+	height: 80px;
+	margin-top: 30px;
+}
+
+.content-wrapper {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 1024px;
+	flex-wrap: wrap;
+	height: 500px;
+	margin-top: 30px;
+}
+
+
+.title-article h4 {
+	color: orange;
+	font-size: 2rem;
+	font-family: 'Jua', sans-serif;
+	text-shadow: 2px 2px 2px orangered;
+	text-align: center;
+	margin: 0;
+	width: 280px;
+	height: 50px
+}
+
+.attraction {
+	display: flex;
+	flex-direction: row;
+	justify-content: left;
+	flex-wrap: wrap;
+	width: 400px;
+	height: 80px;
+}
+
+
+.gourmandise {
+	display: flex;
+	flex-direction: row;
+	justify-content: right;
+	flex-wrap: wrap;
+	width: 400px;
+	height: 80px;
+}
+
+ul.column-list {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+
+	align-items: center;
+	flex-wrap: wrap;
+	list-style: none;
+	width: 500px;
+	height: 390px;
+	padding-left: 10px;
+}
+
+.is_on {
+	width: 185px;
+	height: 130px;
+	text-decoration: none;
+}
+
+.content-img-wrapper {
+	display: flex;
+	flex-direction: row;
+	justify-content:space-evenly;
+	flex-wrap: wrap;
+	width: 510px;
+	height: 450px;
+}
+
+.content-text {
+	width: 510px;
+	height: 450px;
+}
+
+.modal-custom-button:hover {
+	transform: scale(1.1);
+}
+
+.text-line {
+	color: black;
+	font-family: 'Dongle', sans-serif;
+	font-size: 1.8rem;
+	margin: 15px;
+	height: 30px;
+}
+
+.text-line a {
+	text-decoration: none;
+	color:  rgb(24,189,222);
+	font-family: 'Dongle', sans-serif;
+	font-size: 1.8rem;
+}
+
+.text-line a:active, .text-line a:visited, .text-link a:link, .text-link a:hover {
+	text-decoration: none;
+	color:  rgb(24,189,222);
+	font-family: 'Dongle', sans-serif;
+	font-size: 1.8rem;
+}
+
+.title-article img {
+	width: 50px;
+	height: 50px;
+}
+
+.thumb-area {
+	width: 185px;
+	height: 130px;
+	margin: 3px;
+}
+
+.img-cultural-tour {
+	width: 180px;
+	height: 125px;
+	border-radius: 25%;
+}
+
+.title-cultural-tour {
+	font-family: 'Nanum Pen Script', cursive;
+    font-size: 1.5rem;
+    border-radius: 7%;
+    color: rgb(24,189,222);
+    width: 190px;
+    height: 2rem;
+	text-align: center;
+	margin: 0;
+}
+
+.content-title p {
+	color: orange;
+	font-size: 50px;
+	font-family: 'Jua', sans-serif;
+	text-shadow: 2px 2px 2px orangered;
+	text-align: center;
+	margin: 40px;
+}
+
+/* ============================== 탭 메뉴 ======================================== */
+#content {
+	width: 1024px;
+	height: 900px;
+}
+.list {
+	list-style:none;
+	width: 900px;
+	height: 450px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-content: space-around;
+	justify-content: space-between;
+	margin: 0 auto;
+}
+.cont_area {
+	width: 900px;
+	height: 470px;
+}
+
+.btn-tab {
+	text-decoration:none; 
+	color:#333;
+}
+.wrap {
+	padding:15px; 
+	letter-spacing:-0.5px;
+}
+.tab_menu {
+	position: relative;
+	height: 470px;
+}
+.tab_menu .list {
+	overflow:hidden;
+}
+.tab_menu .list li {
+	display: block;
+	float:left; 
+	margin-right:14px;
+}
+.tab_menu .list li.is_on .btn-tab{
+	font-weight:bold; 
+	color:green;
+}
+.tab_menu .list .btn-tab{
+	font-size:13px;
+}
+
+.article-contents {
+	width: 1024px; 
+	height: 450px; 
+}
+.cont{
+	display:none; 
+	position:absolute; 
+	top: auto; 
+	left: auto; 
+	background:#fff; 
+	color:#fff; 
+	text-align:center; 
+	width: 1024px; 
+	height: 450px; 
+}
+
+.default-contents {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-content: space-around;
+	justify-content: space-between;
+	width: 900px; 
+	height: 450px; 
+}
+
+.default-text {
+	width: 400px; 
+	height: 450px; 
+	color: #000;
+	font-size: 1.1	rem;
+	margin: 2px 0;
+	font-family: 'Jua', sans-serif;
+	text-align: center;
+}
+
+.default-cont h3 {
+	width: 1024px; 
+	height: 50px; 
+	text-align: center;
+	color:  rgb(24,189,222);
+	font-family: 'jua', sans-serif;
+	font-style: italic;
+	font-size: 50px;
+	margin: 40px;
+	text-shadow: 4px 2px 0px orange;
+}
+.default-image {
+	width: 500px; 
+	height: 450px; 
+}
+.default-image img {
+	width: 500px; 
+	height: 450px; 
+	border-radius: 20%;
+}
+
+/* =========================== 모달 창 ============================================*/
+/* -- 간송 이미지-- */
+#gansongbohwagak {
+	background-image: url(../images/gansong.jpg);
+	background-size: 100% 100%;
+	border-radius: 10px;
+}
+
+#hunminjeongum {
+	background-image: url(../images/Hunminjeongum.jpg);
+	background-size: 100% 100%;
+	border-radius: 10px;
+}
+
+#miindo {
+	background-image: url(../images/Hyewon-Miindo.jpg);
+	background-size: 100% 100%;
+	border-radius: 10px;
+}
+
+#goryeo {
+	background-image: url(../images/Goryeo_Celadon.jpg);
+	background-size: 100% 100%;
+	border-radius: 10px;
+}
+
+
+/* -- 와룡공원 -- */
+
+#waryong1 {
+	background-image: url(../images/park_sleepingdragon4.jpg);
+	background-size: 100% 100%;
+	border-radius: 10px;
+}
+#waryong2 {
+	background-image: url(../images/waryong_summer.jpg);
+	background-size: 100% 100%;
+	border-radius: 10px;
+}
+
+#waryong3 {
+	background-image: url(../images/waryong_fall.jpg);
+	background-size: 100% 100%;
+	border-radius: 10px;
+}
+
+#waryong4 {
+	background-image: url(../images/waryong_winter.jpg);
+	background-size: 100% 100%;
+	border-radius: 10px;
+}
+
+
+/* -- 심우장 -- */
+
+#simwoojang1 {
+	background-image: url(../images/simwoojang1.jpg);
+	background-size: 100% 100%;
+	border-radius: 10px;
+}
+#simwoojang2 {
+	background-image: url(../images/simwoojang2.jpg);
+	background-size: 100% 100%;
+	border-radius: 10px;
+}
+
+#simwoojang3 {
+	background-image: url(../images/simwoojang3.jpg);
+	background-size: 100% 100%;
+	border-radius: 10px;
+}
+
+#simwoojang4 {
+	background-image: url(../images/simwoojang4.jpg);
+	background-size: 100% 100%;
+	border-radius: 10px;
+}
+
+/* -- 길상사 -- */
+
+#gilsangsa1 {
+	background-image: url(../images/gilsangsa1.jpg);
+	background-size: 100% 100%;
+	border-radius: 10px;
+}
+#gilsangsa2 {
+	background-image: url(../images/gilsansa-bosal.jpg);
+	background-size: 100% 100%;
+	border-radius: 10px;
+}
+
+#gilsangsa3 {
+	background-image: url(../images/gilsangsa2.jpg);
+	background-size: 100% 100%;
+	border-radius: 10px;
+}
+
+#gilsangsa4 {
+	background-image: url(../images/gilsangsa3.jpg);
+	background-size: 100% 100%;
+	border-radius: 10px;
+}
+/* -- 나폴레옹 -- */
+
+#napoleon1 {
+	background-image: url(../images/napoleon1.jpg);
+	background-size: 100% 100%;
+	border-radius: 50%;
+	border-radius: 10px;
+}
+#napoleon2 {
+	background-image: url(../images/napoleon2.jpg);
+	background-size: 100% 100%;
+	border-radius: 10px;
+}
+
+#napoleon3 {
+	background-image: url(../images/napoleon3.jpg);
+	background-size: 100% 100%;
+	border-radius: 10px;
+}
+
+#napoleon4 {
+	background-image: url(../images/napoleon4.jpg);
+	background-size: 100% 100%;
+	border-radius: 10px;
+}
+
+/* -- 성북동 빵공장 -- */
+
+#factory1 {
+	background-image: url(../images/breadfactory.jpg);
+	background-size: 100% 100%;
+	border-radius: 10px;
+}
+#factory2 {
+	background-image: url(../images/cream.jpg);
+	background-size: 100% 100%;
+	border-radius: 10px;
+}
+
+#factory3 {
+	background-image: url(../images/berry.jpg);
+	background-size: 100% 100%;
+	border-radius: 10px;
+}
+
+#factory4 {
+	background-image: url(../images/bread.jpg);
+	background-size: 100% 100%;
+	border-radius: 10px;
+}
+/* -- 성북동 누룽지 백숙 -- */
+
+#baeksuk1 {
+	background-image: url(../images/nurunggibaeksuk.jpg);
+	background-size: 100% 100%;
+	border-radius: 10px;
+}
+#baeksuk2 {
+	background-image: url(../images/baeksuk.jpeg);
+	background-size: 100% 100%;
+	border-radius: 10px;
+}
+
+#baeksuk3 {
+	background-image: url(../images/jeon.jpeg);
+	background-size: 100% 100%;
+	border-radius: 10px;
+}
+
+#baeksuk4 {
+	background-image: url(../images/sujebi.jpeg);
+	background-size: 100% 100%;
+	border-radius: 10px;
+}
+/* -- 이강희 곰탕 -- */
+
+#gomtang1 {
+	background-image: url(../images/leegomtang.jpg);
+	background-size: 100% 100%;
+	border-radius: 10px;
+}
+#gomtang2 {
+	background-image: url(../images/gomtang.jpg);
+	background-size: 100% 100%;
+	border-radius: 10px;
+}
+
+#gomtang3 {
+	background-image: url(../images/gobchangjeongol.jpg);
+	background-size: 100% 100%;
+	border-radius: 10px;
+}
+
+#gomtang4 {
+	background-image: url(../images/haesingomtang.jpg);
+	background-size: 100% 100%;
+	border-radius: 10px;
+}
+
+.modal-custom-button {
+	width: 230px;
+	height: 155px;
+	background-color: #fff;
+	border: none;
+}
+.modal-custom {
+	display: none; 
+	position: fixed; 
+	z-index:1; 
+	padding-top:100px; 
+	left:0; top:0; 
+	width:100%; 
+	height:100%; 
+	overflow:auto;
+	background-color:rgb(0,0,0); 
+	background-color:rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.modal-content {
+	 position: relative; 
+	 background-color: none; 
+	 margin:auto; padding:0; 
+	 width: 40%; 
+	 -webkit-animation-name:animatetop; 
+	 -webkit-animation-duration:0.4s; 
+	 animation-name:animatetop; 
+	 animation-duration:0.4s
+}
+.modal-content-img {
+	width: 800px;
+	height: 600px;
+}
+
+@-webkit-keyframes animatetop {
+     from{top:-300px; opacity:0}
+     to{top:0; opacity:1}
+}
+@keyframes animatetop {
+    from{top:-300px; opacity:0}
+    to{top:0; opacity:1}
+}
+.close-modal {
+	color:white;
+	float:right;
+	font-size:28px; 
+	font-weight:bold; 
+}
+.close-modal:hover, .close-modal:focus {
+	color:#000; 
+	text-decoration:none; 
+	cursor:pointer; 
+}
+.modal-header{
+	padding-top: 2px;
+	padding-bottom: 2px;
+	background-color:#5cb85c; 
+	color:white; 
+	width: 800px;
+}
+
+.modal-header h2 {
+	text-align: center;
+}
+
+.modal-body{
+	padding-top: 2px;
+	padding-bottom: 2px;
+	width: 800px;
+	height: 600px;
+}
+
+.btn-wrapper{
+
+	height: 200px;
+}
+
+
+.btn-wrapper h3 {
+	display: flex;
+	justify-content: center;
+	color: orange;
+	font-size: 1.5rem;
+	font-family: 'Jua', sans-serif;
+	text-shadow: 2px 2px 2px orangered;
+	text-align: center;
+	margin: 0px;
+	height: 30px;
+}

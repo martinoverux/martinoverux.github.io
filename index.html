@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Do+Hyeon&family=Dongle:wght@300;400;700&family=Gamja+Flower&family=Jua&family=Nanum+Myeongjo:wght@400;700;800&family=Nanum+Pen+Script&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&family=Oleo+Script:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>index</title>
+</head>
+    <body>
+		<div id="container">
+			<header>
+				<div class="mainTitle">
+					<a href="index.html">
+						<h1>Sitz im Leben</h1>
+						<hr class="line2">
+					</a>
+				</div>
+				<aside id = "members">
+						<div class="member">
+							<a href="signup.html">회원가입</a>
+							<a href="signin.html">로그인</a>
+						</div>
+						<div class="member-login">
+							<a href="mypage.html" id="my-a" >마이 페이지</a>
+							<button id="my-btn" type="button" onclick="logout();">로그아웃</button>
+						</div>
+				</aside>
+				<aside id = subTitle> 
+					<h2>삶이 머문 자리</h2>
+				</aside>
+				<nav>
+					<ul class="navi">
+						<li class="mainMenu"><a href="aboutme.html">About Me</a></li>
+						<li class="mainMenu"><a href="seongbukdong.html" id="hoverchange">Mein Sitz im Leben</a>
+							<div class="subExplorelife">
+								<a href="seongbukdong.html">성북동</a>
+							</div>
+						</li>
+						<li class="mainMenu"><a href="myroadmap.html">My Roadmap</a></li>
+					</ul>
+				</nav>
+			</header>
+			<section id="content">  
+				<hr class="line2">
+				<div class="main-visual-wrap" id="main-visual">
+				  <div class="main-visual">
+					<div class="bx-wrapper">
+						<div class="bx-viewport">
+							<ul class="slider-box">
+									<li class="visual" id="visual-image1">
+										<p class="img-title-txt">간송미술관 보화각</p>
+										<p class="img-description-txt">우리나라 최초의 사립 미술관이자</p>
+										<p class="img-description-txt">오늘날에도 3대 사립 미술관 중 하나인</p>
+										<p class="img-description-txt">간송미술관 보화각의 모습</p>
+									</li>
+									<li class="visual" id="visual-image2">
+										<p class="img-title-txt">와룡공원</p>
+										<p class="img-description-txt">성북구와 종로구에 걸쳐 있는,</p>
+										<p class="img-description-txt">봄을 맞이한 화려한 모습의</p>
+										<p class="img-description-txt">한양 도성 근처에서의 모습</p>
+									</li>
+									<li class="visual" id="visual-image3">
+										<p class="img-title-txt">심우장</p>
+										<p class="img-description-txt">만해 한용운 선생님께서</p>
+										<p class="img-description-txt">마지막을 </p>
+										<p class="img-description-txt">마지막을 보내신 장소</p>
+									</li>
+									<li class="visual" id="visual-image4">
+										<p class="img-title-txt">길상사</p>
+										<p class="img-description-txt">소유 중심인</p>
+										<p class="img-description-txt">현대 사회에서</p>
+										<p class="img-description-txt">"무소유"의 삶을 알려주신</p>
+										<p class="img-description-txt">법정스님께서 지으신 사찰</p>
+									</li>
+									<li class="visual" id="visual-image5">
+										<p class="img-title-txt">나폴레옹 과자점 본점</p>
+										<p class="img-description-txt">서울 3대 빵집이자</p>
+										<p class="img-description-txt">수많은 제과명장을 배출한</p>
+										<p class="img-description-txt">나폴레옹 과자점의 케이크</p>
+									</li>
+									<li class="visual" id="visual-image6">
+										<p class="img-title-txt">성북동 빵공장</p>
+										<p class="img-description-txt">성북동 빵공장의</p>
+										<p class="img-description-txt">베스트 셀러</p>
+										<p class="img-description-txt">딸기 팡도르</p>
+									</li>
+									<li class="visual" id="visual-image7">
+										<p class="img-title-txt">성북동 누룽지 백숙</p>
+										<p class="img-description-txt">무더위의</p>
+										<p class="img-description-txt">한여름에도</p>
+										<p class="img-description-txt">한파가 몰아치는</p>
+										<p class="img-description-txt">한겨울에도</p>
+									</li>
+									<li class="visual" id="visual-image8">
+										<p class="img-title-txt">이강희 곰탕</p>
+										<p class="img-description-txt">진하고</p>
+										<p class="img-description-txt">깊은</p>
+										<p class="img-description-txt">육수의 정석</p>
+									</li>
+							</ul>	
+						 </div>
+					</div>
+				</div>
+				<div class="bx-controls">
+					<button type="button" class="bx-prev"></button>
+					<div class="paginations"></div>
+					<button type="button" class="bx-next"></button>
+				</div>
+			</div>
+			<button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
+			</section>
+			<footer>
+				<br>
+				<hr>
+				<h3><em>Sitz im Leben</em></h3>
+				<p>&lt;Copyright 2022. <em>KimHyeonwoo</em>. All rights reserved.&gt;</p>
+			</footer>
+		</div>
+		<script src="./js/common.js"></script>
+		<script src="./js/index.js"></script>
+		<script src="./js/loginout.js"></script>
+    </body>
+</html>

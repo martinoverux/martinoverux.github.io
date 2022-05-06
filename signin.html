@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Do+Hyeon&family=Dongle:wght@300;400;700&family=Gamja+Flower&family=Jua&family=Nanum+Myeongjo:wght@400;700;800&family=Nanum+Pen+Script&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&family=Oleo+Script:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/signin.css">
+    <script src="./js/signin.js"></script>
+	<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+	</script>
+	<script type="text/javascript">
+   		(function(){
+      		emailjs.init("iiBUjT4gKhsdLuwTY");
+  		})();
+	</script>
+    <title>signin</title>
+</head>
+    <body>
+		<div id="container">
+			<header>
+				<div class="mainTitle">
+					<a href="index.html">
+						<h1>Sitz im Leben</h1>
+						<hr class="line2">
+					</a>
+				</div>
+				<aside id = "members">
+					<div class="member">
+						<a href="signup.html">회원가입</a>
+						<a href="signin.html">로그인</a>
+					</div>
+					<div class="member-login">
+						<a id="my-a" herf="mypage.html">마이 페이지</a>
+						<button id="my-btn" type="button" onclick="logout();">로그아웃</button>
+					</div>
+				</aside>
+				<aside id = subTitle> 
+					<h2>삶이 머문 자리</h2>
+				</aside>
+				<nav>
+					<ul class="navi">
+						<li class="mainMenu"><a href="aboutme.html">About Me</a></li>
+						<li class="mainMenu"><a href="seongbukdong.html" id="hoverchange">Mein Sitz im Leben</a>
+							<div class="subExplorelife">
+								<a href="seongbukdong.html">성북동</a>
+							</div>
+						</li>
+						<li class="mainMenu"><a href="myroadmap.html">My Roadmap</a></li>
+					</ul>
+				</nav>
+			</header>
+			<section id="content">  
+				<hr class="line2">
+				<div>
+					<article class="signin">
+						<br><br><br>
+						<div class="signinTtitle">
+							<h3>로그인</h3>
+							<br><br><br>
+								<form id="login-form" class="form-area">
+									<div class="input-wrapper">
+										<div class="input-container">
+											<input id="input-user-id" type="text" name="userId" placeholder="아이디" required>
+										</div>
+									</div>
+									<div class="input-wrapper">
+										<div class="input-container">
+											<input id="input-password" name="password" type="password" placeholder="비밀번호" required>
+										</div>
+									</div>
+	
+									<div class="row">
+										<div class="openBtn">
+											<button type="button" class="openButton" onclick="memberquery()">회원 목록 조회</button>
+											<button type="button" class="openButton" onclick="openFindId()">아이디 찾기</button>
+											<button type="button" class="openButton" onclick="openFindPassword()">비밀번호 찾기</button>
+										</div>
+									</div>
+									<br><br>
+									<button type="button" id="btn-login" onclick="login();">로그인</button>
+								</form>
+						</div>
+					</article>
+				</div>
+				<button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
+			</section>
+			<footer>
+				<br>
+				<hr>
+				<h3><em>Sitz im Leben</em></h3>
+				<p>&lt;Copyright 2022. <em>KimHyeonwoo</em>. All rights reserved.&gt;</p>
+			</footer>
+		</div>
+		<script src="./js/common.js"></script>
+		<script src="./js/loginout.js"></script>
+    </body>
+</html>

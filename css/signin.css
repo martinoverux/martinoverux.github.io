@@ -1,0 +1,161 @@
+#container {
+	background-color:#fff;
+	width: 1024px;
+	height: 1000px;
+	margin: 0 auto;
+}
+
+hr.line2{
+	border-top: 4px solid rgb(24,189,222);
+	border-radius: 15%;
+	margin: 0px 0px 5px;
+}	
+
+/* ====================================== section ===================================== */
+
+.input-wrapper{
+    flex: 1;
+    margin: 0px 0px 10px;
+}
+.input-wrapper .input-container{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 300px;
+    height: 46px;
+    background: #FFFFFF;
+    border: 1px solid #CACACA;
+    border-radius: 4px;
+    padding: 0px 42px 0px 16px;
+    margin: 0 auto;
+}
+
+.input-wrapper .input-container input::placeholder {
+    color: #CACACA;
+    background-color: #fff;
+}
+
+#input-user-id, #input-password  {
+    border: 0px;
+    width: 350px;
+    height: 40px;
+    font-size: 1.3rem;
+    background-color: #fff;
+}
+
+#input-user-id:focus, #input-password:focus {
+    outline: none;
+}
+
+section p, section a {
+    font-family: 'Jua', sans-serif;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: rgb(24,189,222);
+    text-shadow: 2px 2px 2px orange;;
+}
+
+button {
+    font-family: 'Jua', sans-serif;
+    background-color: rgb(24,189,222);
+    border: none;
+    color: white;
+}
+
+.signinTtitle h3 {
+    color:  rgb(24,189,222);
+    font-family: 'Jua', sans-serif;
+	font-size: 4rem;
+	text-shadow: 4px 2px 0px orange;
+	margin: 10px 0px 0px;
+    text-align: center;
+}
+
+.container{
+    min-height: 772px;
+}
+.wrapper{
+    text-align: center;
+    margin-top: 0px;
+}
+
+.logo-item{
+    margin-top:48px;
+}
+
+.login-title-item{
+    display: none;
+    margin-top: 88px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    letter-spacing: -0.25px;
+    color: #333333;
+}
+
+.id-input{
+    margin-top: 50px;
+}
+
+.password-input{
+    margin-top: 8px;
+}
+
+.row{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 11px;
+    width: 360px;
+    height: 40px;
+    margin: 0 auto;
+}
+
+
+.auto-login-item{
+    margin-right: auto;
+}
+
+.find-password-item{
+    margin-left: auto;
+}
+
+.link-divider-item{
+    width: 1px;
+    height: 10px;
+    margin: 0px 8px;
+    background: #DDDDDD;
+}
+
+#btn-login{
+    width: 365px;
+    height: 48px;
+    margin-top: 20px;
+    margin: 0 300px 0px 330px;
+    border-radius: 5px;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: -0.25px;
+}
+
+/* ====================================== popup ====================================== */
+.openBtn {
+    display: flex;
+    justify-content: left;
+}
+
+.openButton{
+    font-family: 'Dongle', sans-serif;  
+    font-size: 1.2rem;
+    text-shadow: none;
+    background:rgb(24,189,222); 
+    color:#fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left:5px; 
+    padding:4px 6px; 
+    height: 30px;
+}
+

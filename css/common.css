@@ -1,0 +1,215 @@
+/* ==================================== header ====================================== */
+
+header {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	background-color:#fff;
+	height: 310px;
+	padding: 1px 5px;
+	margin: 0px 0px 30px
+}
+
+.mainTitle {
+	height: 150px;
+}
+
+header h1 {
+	color:  rgb(24,189,222);
+	font-family: 'Oleo Script', cursive;
+	font-style: italic;
+	font-size: 80px;
+	text-shadow: 4px 2px 0px orange;
+	margin: 10px 0px 0px;
+	width: 450px;
+}
+
+header h2 {
+	color: orange;
+	width: 223px;
+	height: 57px;
+	font-size: 40px;
+	font-family: 'Jua', sans-serif;
+	text-shadow: 2px 2px 2px orangered;
+	margin: 25px 25px 0px 25px;
+}
+
+header a {
+	font-family: 'Nanum Pen Script', cursive;
+	font-size: 40px;
+	border-radius: 7%;
+	margin: 5px;
+	color: rgb(24,189,222);
+	text-decoration: none;
+	border-right: 1px #fff solid;
+	width: 8rem;
+	height: 2.5em;
+}
+
+.subExplorelife a {
+    font-size: 30px;
+}
+
+header a:hover, #my-btn:hover {
+	color: #fff;
+	background-color: rgb(24,189,222);
+}
+
+#hoverchange:hover {
+	font-size: 40px;
+}
+#hoverchange:hover {
+	font-size: 0;
+}
+#hoverchange:hover:before  {
+	content: "나의 삶의 자리";
+	font-size: 40px;
+	background-color: rgb(24,189,222);
+	border-radius: 7%;
+}
+
+#subTitle {
+	align-content: flex-start;
+}
+
+
+ul.navi {
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: right;
+	margin: 16px 0px 25px 340px;
+	width: 650px;
+	height: 50px
+	
+}
+
+ul.navi li {
+	list-style: none;
+	margin: 0 auto;
+	height: 40px;
+    text-align: center;
+}
+
+.mainMenu:first-of-type::after, .mainMenu:last-of-type::before {
+	content: "ㅣ";
+	color:  rgb(24,189,222);
+	font-size: 1.47rem;
+	
+  }
+
+ul.navi li a {
+    text-shadow: 2px 0px 4px orange;
+	width: 350px;
+
+}
+
+ul.li div, ul.navi div, header li div {
+	display: none;
+}
+
+
+ ul.navi > li:hover div  {
+	display: block; 
+}
+
+#members{
+	display: flex;
+	width: 295px;
+}
+
+.member-login {
+	display: none;
+	width: 240px;
+	height: 40px;
+	padding: 0px;
+	margin-left: 55px;
+}
+
+.member {
+	display: block;
+	width: 180px;
+	height: 40px;
+	padding: 0px;
+	margin-left: 120px;
+}
+
+#my-a {
+	width: 170px;
+	height: 40px;
+	font-family: 'Jua', sans-serif;
+	font-size: 25px;
+	color: orange;
+	text-shadow: 2px 2px 2px orangered;
+}
+
+#my-btn {
+	width: 110px;
+	height: 30px;
+	background-color: #fff;
+	border: none;
+	font-family: 'Jua', sans-serif;
+	font-size: 25px;
+	color: orange;
+	text-shadow: 2px 2px 2px orangered;
+	border-radius: 7%;
+
+}
+ 
+.member a {
+	font-family: 'Jua', sans-serif;
+	font-size: 25px;
+	color: orange;
+	text-shadow: 2px 2px 2px orangered;
+}
+
+/* =============================== top-button ================================== */
+
+
+#topBtn {
+	display: none; 
+	position: fixed; 
+	bottom: 20px; 
+	right: 30px; 
+	z-index: 99; /* Make sure it does not overlap */
+	border: none; 
+	outline: none; 
+	background-color: rgb(24,189,222); 
+	color: white; 
+	cursor: pointer; 
+	padding: 15px; 
+	border-radius: 10px; 
+	font-size: 18px; 
+  }
+  
+  #topBtn:hover {
+	background-color: orange; 
+  }
+/* =============================== footer ====================================== */
+
+footer {
+	background-color: #fff;
+	clear: both;
+	width: 1024px;
+	height: 100px;
+	margin: 0 auto;
+}
+
+footer h3 {
+	font-size: 2.5rem;
+	font-family: 'Oleo Script', cursive;
+	color:  rgb(24,189,222);
+	text-shadow: 4px 2px 0px orange;
+	padding: 15px 5px 0px;
+	margin: 5px 5px;
+}
+
+footer p {
+	text-align: center;
+	margin: 0 auto;
+    font-family: 'Oleo Script', cursive;
+	font-size: 1.2rem;
+}

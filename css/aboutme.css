@@ -1,0 +1,246 @@
+#container {
+	background-color:#fff;
+	width: 1024px;
+	height: 3300px;
+	margin: 0 auto;
+}
+
+hr.line2{
+	border-top: 4px solid rgb(24,189,222);
+	border-radius: 15%;
+	margin: 0px 0px 5px;
+}	
+
+/* ======================================================== section ========================================================== */
+
+.aboutMe_aboutMe .AboutMe_content {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    width: 100%;
+    max-width: 71.25rem;
+    padding: 4rem 2rem;
+    margin: 0 auto;
+}
+
+.meaning{
+    display: flex;
+    flex-direction: column;
+    width: 1024px;
+    height: 750px;
+}
+
+.meaning h2{
+    width: 1024px;
+    height: 90px;
+    font-size: 4rem;
+    font-family: 'Oleo Script', cursive;
+    font-style: italic;
+    color:  rgb(24,189,222);
+	text-shadow: 4px 2px 0px orange;
+	margin-bottom: 0;
+    text-align: center;
+}
+.meaning h3{
+    width: 1024px;
+    height: 40px;
+    font-size: 2rem;
+    font-family: 'Jua', sans-serif;
+    color: orange;
+	text-shadow: 2px 2px 2px orangered;
+    margin-top: 10px;
+    text-align: center;
+}
+.meaning-inner {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 512px;
+    height: 530px;
+}
+
+.meaning-image{
+    width: 500px;
+    height: 500px;
+}
+
+.meaning-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20%;
+}
+
+.meaning-text {
+    width: 500px;
+    height: 530px;
+}
+
+.meaning-text p {
+    font-family: 'Jua', sans-serif;
+    text-align: center;
+    font-size: 1.35rem;
+    color: #000;
+    margin: 10px 0;
+}
+
+#content {
+    width: 1024px;
+    height: 2800px;
+}
+
+.sectionBackgroudnImage{
+    width: 1024px;
+    height: 500px;
+    background-image: url(../images/tablewithlaptop1.png);
+    background-size: 100% 100%;
+    border-radius: 20%;
+}
+
+#archiving_table{
+    width: 1024px;
+    height: 200px;
+    margin: 30px auto;
+}
+
+.sectionTitle_sectionTitle {
+    display: table;
+    position: relative;
+    margin: 0 auto 3rem;
+}
+
+.sectionTitle_text {
+    
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    font-family: Black Han Sans,sans-serif;
+    font-weight: 400;
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+.sectionTitle_SectionTitle .sectionTitle_link-wrapper {
+    position: absolute;
+    top: 50%;
+    left: -3rem;
+    -moz-transform: translateY(-50%);
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    width: 2rem;
+    height: 2rem;
+    opacity: .5;
+    cursor: pointer;
+}
+
+.aboutMe_aboutMe .aboutMe_basic_infos {
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    -webkit-box-pack: justify;
+}
+
+.aboutMe_basic_info_wrapper {
+    display: flex;
+    margin-bottom: 2rem;
+    width: 350px;
+    margin: 0px 250px 0px 0px
+}
+
+.aboutMe_basic_info {
+    width: 300px;
+    height: 80px;
+    flex-flow: row wrap;
+}
+
+.aboutMe_field_label {
+    font-weight: 700;
+    font-size: 25px;
+    text-align: center;
+}
+.aboutMe_field_value {
+   font-size: 20px;
+   text-align: center;
+}
+
+.aboutMe_skills_infos_frontend, .aboutMe_skills_infos_backend, .aboutMe_skills_infos_database {
+    
+    display: flex;
+    flex-flow: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    -webkit-box-pack: justify;
+    width: 330px;
+    margin: 0px 0px 0px 150px;
+}
+
+.aboutMe_skills_info_wrapper {
+    display: flex;
+    margin-bottom: 2rem;
+    width: 110px;
+}
+
+.aboutMe_skills_info {
+    width: 100px;
+    height: 100px;
+    flex-flow: row wrap;
+}
+
+.aboutMe_skills_field_label {
+    font-family: Black Han Sans,sans-serif;
+    font-size: 2.5rem;
+}
+
+#certificates_table th, #archiving_table th  {
+    font-family: Black Han Sans,sans-serif;
+    font-size: 2rem;
+    text-align: left;
+    padding: 0px 20px;
+}
+
+#certificates_table td , #archiving_table td {
+    font-family: 'Jua', sans-serif;
+    font-size: 1.3rem;
+    padding: 0px 18px;
+}
+
+/* =========================================== 이미지 파일 ===================================== */
+
+.aboutMe_icon_image_wrapper {
+    margin: 40px 125px 20px 125px;
+}
+
+.laptop_image{
+    width: 1024px;
+    height: 500px;
+}
+
+.aboutMe_basic_infos img {
+    width: 50px;
+    height: 50px; 
+}
+
+#aboutMe_html_icon_img , #aboutMe_css_icon_img, .aboutMe_skills_infos_backend img , .aboutMe_skills_infos_database img, #qnet_icon , #history_icon , #github_icon {
+    width: 100px;
+    height: 100px;
+}
+
+#aboutMe_javascript_icon_img {
+    width: 105px;
+    height: 106px; 
+}
+
+#gtelp_icon {
+    width: 120px;
+    height: 36px;
+}
+
+/* ==================================== aside ====================================== */
+
+aside #members {
+	border-radius: 25%;
+	margin: 8px;
+	color: rgb(24,189,222);
+	text-decoration: none;
+	border-right: 1px #fff solid;	
+}

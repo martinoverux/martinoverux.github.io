@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Do+Hyeon&family=Dongle:wght@300;400;700&family=Gamja+Flower&family=Jua&family=Nanum+Myeongjo:wght@400;700;800&family=Nanum+Pen+Script&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&family=Oleo+Script:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/memberquery.css">
+    <script src="./js/memberquery.js"></script>
+    <title>memberquery</title>
+</head>
+<body>
+    <div class="memberquery">
+        <div class="formPopupmemberquery" id="popupFormmemberquery">
+            <form action="" class="formContainer" id="formmemberquery">
+                <div class="pop-title-memberquery">
+                    <h2>회원목록 조회</h2>
+                </div>
+                <div class="input-wrapper">
+                    <div class="pop-memberquery-inner-wrapper">
+                        <div class="pop-memberquery-inner">
+                            <label for="adminId"><strong>아이디</strong></label>
+                            <input type="text" id="adminId" placeholder="관리자 아이디를 입력하세요." name="adminId">
+                        </div>
+                        <div class="pop-memberquery-inner">
+                            <label for="adminPw"><strong>비밀번호</strong></label>	
+                            <input type="password" id="adminPw" placeholder="관리자 비밀번호 입력하세요" name="adminPw" >
+                        </div>
+                        <div class="pop-memberquery-inner-btn" id="button-inner">
+                            <button type="button" class="btn-accept" onclick="adminCheck();">Accept</button>
+                            <button type="button" class="btn-cancel" onclick="self.close();">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <section>
+                <div class="content-wrapper">
+                    <table id="tb-memberinfo">
+                        <thead>
+                          <tr>
+                            <th>No</th>
+                            <th>아이디</th>
+                            <th>비밀번호</th>
+                            <th>이름</th>
+                            <th>핸드폰 번호</th>
+                            <th>이메일</th>
+                            <th>주소</th>
+                            <th>생년월일</th>
+                            <th>가입일</th>
+                          </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                    <button type="button" class="tb-btn-cancel" onclick="self.close();">Close</button>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+</html>

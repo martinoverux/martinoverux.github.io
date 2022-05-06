@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Do+Hyeon&family=Dongle:wght@300;400;700&family=Gamja+Flower&family=Jua&family=Nanum+Myeongjo:wght@400;700;800&family=Nanum+Pen+Script&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&family=Oleo+Script:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/checkId.css">
+    <script src="./js/checkid.js"></script>
+	<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+	</script>
+	<script type="text/javascript">
+   		(function(){
+      		emailjs.init("iiBUjT4gKhsdLuwTY");
+  		})();
+	</script>
+    <title>checkId</title>
+</head>
+<body>
+    <div class="check-id">
+        <div class="formPopupId" id="popupFormId">
+            <form action="" class="formContainer" id="formId">
+                <div class="pop-title-id">
+                    <h2>아이디 중복 검사</h2>
+                </div>
+                <div class="pop-id-inner-wrapper">
+                    <div class="pop-id-inner">
+                        <label for="inputid"><strong>아이디</strong></label>
+                        <input type="text" id="inputid" placeholder="아이디를 입력하세요." name="inputid">
+                        <button onclick="vaildateCheck();" type="button" class="btn-confirm">중복 확인</button>
+                    </div>
+                    <div class="pop-id-inner-btn" id="btn-inner">
+                        <button type="button" class="btn-cancel" onclick="self.close();">닫기</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

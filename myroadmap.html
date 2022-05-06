@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Do+Hyeon&family=Dongle:wght@300;400;700&family=Gamja+Flower&family=Jua&family=Nanum+Myeongjo:wght@400;700;800&family=Nanum+Pen+Script&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&family=Oleo+Script:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/myroadmap.css">
+    <title>myroadmap</title>
+</head>
+    <body>
+		<div id="container">
+			<header>
+				<div class="mainTitle">
+					<a href="index.html">
+						<h1>Sitz im Leben</h1>
+						<hr class="line2">
+					</a>
+				</div>
+				<aside id = "members">
+					<div class="member">
+						<a href="signup.html">회원가입</a>
+						<a href="signin.html">로그인</a>
+					</div>
+					<div class="member-login">
+						<a id="my-a" href="mypage.html">마이 페이지</a>
+						<button id="my-btn" type="button" onclick="logout();">로그아웃</button>
+					</div>
+				</aside>
+				<aside id = subTitle> 
+					<h2>삶이 머문 자리</h2>
+				</aside>
+				<nav>
+					<ul class="navi">
+						<li class="mainMenu"><a href="aboutme.html">About Me</a></li>
+						<li class="mainMenu"><a href="seongbukdong.html" id="hoverchange">Mein Sitz im Leben</a>
+							<div class="subExplorelife">
+								<a href="seongbukdong.html">성북동</a>
+							</div>
+						</li>
+						<li class="mainMenu"><a href="myroadmap.html">My Roadmap</a></li>
+					</ul>
+				</nav>
+			</header>
+			<hr class="line2">
+			<section id="content"> 
+				<h2>My Roadmap</h2>
+				<table id="twotwo">
+					<tbody >
+							<tr class="trclss">
+								<th rowspan="5">2022</th>
+								<td>(디지털컨버전스)자바(JAVA)기반 공공데이터 융합 개발자 양성과정A 수료(2022.08.29.)</td>
+							</tr>
+							<tr>
+								<td>컴퓨터 사이언스 공부(운영체제, 네트워크 등)</td>
+							</tr>
+							<tr>
+								<td>React 공부하기</td>
+							</tr>
+							<tr>
+								<td>국비 과정에서 배운 것들을 토대로 개인 프로젝트 만들기</td>
+							</tr>
+							<tr>
+								<td>정보처리기사 자격증 취득 준비(필기/실기)</td>
+							</tr>
+					</tbody>
+				</table>
+				<table id="arrow1">
+					<tbody>
+						<td><img src="./images/arrow3.png" alt="아래 방향 화살표"></td>
+					</tbody>
+				</table>
+				<table id="twothree">
+					<tbody>
+						<tr class="trclss">
+							<th rowspan="4">2023</th>
+							<td>NoSQL 데이터베이스 - MongoDB 학습</td>
+						</tr>
+						<tr>
+							<td>웹 보안에 대해 심층 탐구</td>
+						</tr>
+						<tr>
+							<td>알고리즘&자료구조 학습</td>
+						</tr>
+						<tr>
+							<td>실력향상을 위한 개인프로젝트 꾸준히 진행</td>
+						</tr>
+					</tbody>
+				</table>
+				<table id="arrow2">
+					<tbody>
+						<td><img src="./images/arrow1.png" alt="아래 방향 화살표"></td>
+					</tbody>
+				</table>
+				<table id="twofour">
+					<tbody>
+						<tr class="trclss">
+							<th rowspan="4">2024</th>
+							<td>Python 공부해보기</td>
+						</tr>
+						<tr>
+							<td>함수형 언어 다뤄보기</td>
+						</tr>
+						<tr>
+							<td>최신 트렌드 언어들 학습</td>
+						</tr>
+						<tr>
+							<td>실력향상을 위한 개인프로젝트 꾸준히 진행</td>
+						</tr>
+					</tbody>
+				</table>
+				<button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
+			</section>
+			<footer>
+				<br>
+				<hr>
+				<h3><em>Sitz im Leben</em></h3>
+				<p>&lt;Copyright 2022. <em>KimHyeonwoo</em>. All rights reserved.&gt;</p>
+			</footer>
+		</div>
+		<script src="./js/common.js"></script>
+		<script src="./js/loginout.js"></script>
+    </body>
+</html>

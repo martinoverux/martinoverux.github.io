@@ -1,0 +1,70 @@
+#container {
+	background-color:#fff;
+	width: 1024px;
+	height: 1600px;
+	margin: 0 auto;
+}
+
+hr.line2{
+	border-top: 4px solid rgb(24,189,222);
+	border-radius: 15%;
+	margin: 0px 0px 5px;
+}	
+
+/* ==================================== section ====================================== */
+
+section {
+	background-color:#fff;
+	width: 1024px;
+	height: 1300px;
+}
+
+#content {
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	align-content: stretch;
+	width: 1024px;
+	height: 1100px;
+}
+
+#content h2 {
+	font-family: 'Oleo Script', cursive;
+	font-size: 4rem;
+	color:  #f9c51d;
+	text-shadow: 4px 2px 0px orangered;
+	text-align: center;
+}
+
+#content img {
+	width: 50px;
+	height: 50px;
+	margin: 0px 490px;
+}
+
+th {
+	font-family: 'Jua', sans-serif;
+	font-size: 3rem;
+	color: orange;
+	text-shadow: 2px 2px 2px orangered;
+	width: 500px;
+	height: 150px;
+}
+
+td {
+	font-family: 'Jua', sans-serif;
+	color: white;
+	font-size: 1.5rem;
+	width: 500px;
+	height: 50px;
+}
+
+#twotwo {
+	background-color: #1d809f;
+}
+#twothree {
+	background-color: #f9c51d;
+}
+#twofour {
+	background-color: orangered;
+}
